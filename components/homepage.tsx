@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { CardTitle, CardDescription, CardContent, Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { DialogTrigger, DialogTitle, DialogHeader, DialogContent, DialogFooter, Dialog } from "@/components/ui/dialog"
+import { JSX, SVGProps } from "react"
 
 export function Homepage() {
   return (
@@ -178,7 +179,7 @@ export function Homepage() {
 }
 
 
-function FilmIcon(props) {
+function FilmIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -205,7 +206,7 @@ function FilmIcon(props) {
 }
 
 
-function SearchIcon(props) {
+function SearchIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
